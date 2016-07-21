@@ -11,6 +11,6 @@ if eq .sth ""(if sth == "")<br>
 
 eg：<br> 
 	{{println .List}}<br> 
-	{{if eq .Result "success" }}<Device >b</Device><br> 
-	{{ else}}<Device >a</Device><br> 
+	{{if eq .Result "success" }}\<Device >b\</Device> <br> 
+	{{ else}}\<Device >a\</Device> <br> 
 	{{ end}}<br> 
