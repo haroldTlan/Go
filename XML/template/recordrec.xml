@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SET_RECORD_RES>
+	<Result>{{ .Result }}</Result>
+	<DevID>{{ .DevID }}</DevID>
+	<Time>{{ .Time }}</Time>
+</SET_RECORD_RES>	

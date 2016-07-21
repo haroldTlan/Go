@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GET_RECORD_REQ>
+	<DevID>{{ .DevID }}</DevID>
+	<ChannelNo>{{ .ChannelNo }}</ChannelNo>
+	<HashToken>{{ .HashToken }}</HashToken>
+</GET_RECORD_REQ>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<GET_RECORD_RES>
+	<Result>{{ .Result }}</Result>
+	<DevID>{{ .DevID }}</DevID>
+	<RecordLoop>{{ .RecordLoop }}</RecordLoop>
+	<RecordFull>{{ .RecordFull }}</RecordFull>
+	<RecordSpace>{{ .RecordSpace }}</RecordSpace>	
+	<Time>{{ .Time }}</Time>
+</GET_RECORD_RES>

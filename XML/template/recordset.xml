@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SET_RECORD_RES>
+	<DevID>{{ .DevID }}</DevID>
+	<ChannelNo>{{ .ChannelNo }}</ChannelNo>
+	<RecordLoop>{{ .RecordLoop }}</RecordLoop>
+	<RecordFull>{{ .RecordFull }}</RecordFull>
+	<RecordSpace>{{ .RecordSpace }}</RecordSpace>
+	<HashToken>{{ .HashToken }}</HashToken>
+</SET_RECORD_RES>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<SET_RECORD_RES>
+	<Result>{{ .Result }}</Result>
+	<DevID>{{ .DevID }}</DevID>
+	<Time>{{ .Time }}</Time>
+</SET_RECORD_RES>

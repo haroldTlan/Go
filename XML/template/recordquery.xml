@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QUERY_RECORD_POLICY_REQ>
+	<DevID>{{ .DevID }}</DevID>
+	<ChannelNo>{{ .ChannelNo }}</ChannelNo>	
+	<HashToken>{{ .HashToken }}</HashToken>
+</QUERY_RECORD_POLICY_REQ>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<QUERY_RECORD_POLICY_RES>
+	<Result>{{ .Result }}</Result>
+	<DevID>{{ .DevID }}</DevID>
+	{{range .List}}<WeekPolicy>
+		<PolicyID>{{ .PolicyID }}</PolicyID>
+		<PolicyName>{{ .PolicyName }}</PolicyName>
+		<StoreType>{{ .StoreType }}</StoreType>
+		<StreamType>{{ .StreamType }}</StreamType>
+		<Week>{{ .Week }}</Week>
+		<StartTime>{{ .StartTime }}</StartTime>
+		<EndTime>{{ .EndTime }}<EndTime>
+	</WeekPolicy>
+	{{end}}	
+</QUERY_RECORD_POLICY_RES>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GET_DEVLIST_REQ>
+</GET_DEVLIST_REQ>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<GET_DEVLIST_RES>
+	<TotalNum>{{ .TotalNum }}</TotalNum>
+	{{range .List}}<Device>
+		<DevID>{{ .DevID }}</DevID>
+		<UserName>{{ .UserName }}</NewDevVer>
+		<Password>{{ .Password }}</Password>
+		<DevName>{{ .DevName }}</DevName>
+	</Device>	
+	{{end}}
+</GET_DEVLIST_RES>	

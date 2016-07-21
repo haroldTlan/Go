@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FILE_QUERY_REQ>
+	<DevID>{{ .DevID }}</DevID>
+	<ChannelNo>{{ .ChannelNo }}</ChannelNo>
+	<StartTime>{{ .StartTime }}</StartTime>
+	<EndTime>{{ .EndTime }}<EndTime>	
+	<PageNo>{{ .PageNo }}</PageNo>
+	<HashToken>{{ .HashToken }}</HashToken>
+</FILE_QUERY_REQ>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<FILE_QUERY_RES>
+	<Result>{{ .Result }}</Result>
+	<DevID>{{ .DevID }}</DevID>
+	<TotalRecordNum>{{ .TotalRecordNum }}</TotalRecordNum>
+	{{range .List}}<File>
+		<FileName>{{ .FileName }}</FileName>
+		<FileSize>{{ .FileSize }}</FileSize>
+		<StartTime>{{ .StartTime }}</StartTime>
+		<EndTime>{{ .EndTime }}<EndTime>
+	</File>
+	{{end}}
+</FILE_QUERY_RES>

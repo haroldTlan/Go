@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SET_DEVLIST_REQ>
+	<TotalNum>{{ .TotalNum }}</TotalNum>
+	{{range .List}}<Device>
+		<DevID>{{ .DevID }}</DevID>
+		<UserName>{{ .UserName }}</NewDevVer>
+		<Password>{{ .Password }}</Password>
+		<DevName>{{ .DevName }}</DevName>
+	</Device>	
+	{{end}}
+</SET_DEVLIST_REQ>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<SET_DEVLIST_RES>
+	<TotalNum>{{ .TotalNum }}</TotalNum>
+	{{range .List}}<Device>
+		<DevID>{{ .DevID }}</DevID>
+		<Result>{{ .Result }}</Result>
+	</Device>	
+	{{end}}
+</SET_DEVLIST_RES>	

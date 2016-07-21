@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DEL_DEVLIST_REQ>
+	<TotalNum>{{ .TotalNum }}</TotalNum>
+	{{range .List}}<Device>
+		<DevID>{{ .DevID }}</DevID>
+	</Device>
+	{{end}}
+</DEL_DEVLIST_REQ>	
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<DEL_DEVLIST_RES>
+	{{range .List}}<Device>
+		<Result>{{ .Result }}</Result>
+	</Device>	 
+	{{end}}		
+</DEL_DEVLIST_RES>	

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DEL_RECORD_POLICY_REQ>
+	<DevID>{{ .DevID }}</DevID>
+	<ChannelNo>{{ .ChannelNo }}</ChannelNo>
+	<PolicyID>{{ .PolicyID }}</PolicyID>
+	<HashToken>{{ .HashToken }}</HashToken>
+</DEL_RECORD_POLICY_REQ>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<DEL_RECORD_POLICY_RES>
+	<Result>{{ .Result }}</Result>
+	<DevID>{{ .DevID }}</DevID>
+</DEL_RECORD_POLICY_RES>
